@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use PharIo\Manifest\Author;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +15,4 @@ use PharIo\Manifest\Author;
 |
 */
 
-
+Route::get('/', [MainController::class, 'home']);
